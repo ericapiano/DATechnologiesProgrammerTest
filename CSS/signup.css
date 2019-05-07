@@ -23,8 +23,15 @@ html {
 .DATechImage {
   padding-left: 80px;
   padding-top: 32px;
-  /* height: 200px;
-  width: 100px; */
+  height: 50px;
+}
+
+.userImg {
+  height: 20px;
+  width: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+  border-top: 5px;
 }
 .form {
   /* background: rgba(19, 35, 47, 0.9); */
@@ -85,6 +92,7 @@ label {
   transition: all 0.25s ease;
   pointer-events: none;
   font-size: 22px;
+  padding-top: 26px;
 }
 label .req {
   margin: 2px;
@@ -108,12 +116,14 @@ input,
 textarea {
   font-size: 22px;
   display: block;
-  width: 100%;
+  width: 360px;
   height: 100%;
-  padding: 5px 10px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  /* padding: 5px 10px; */
   background: none;
   background-image: none;
-  border: 1px solid #a0b3b0;
+  /* border: 1px solid #a0b3b0; */
   color: #ffffff;
   border-radius: 0;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
@@ -126,14 +136,18 @@ textarea:focus {
 
 .field-wrap {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 12px;
+  /* background-color: red; */
+  /* background-color: #e8e8e8; */
+  color: #ffffff;
+  /* opacity: 0.3; */
 }
 
-.top-row:after {
+/* .top-row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 .top-row > div {
   float: left;
   width: 48%;
@@ -145,26 +159,29 @@ textarea:focus {
 
 .button {
   border: 0;
+  padding-top: 24.5px;
+  padding-bottom: 24.5px;
+  width: 360px;
   outline: none;
   border-radius: 0;
-  padding: 15px 0;
+  /* padding: 15px 0; */
   font-size: 14px;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 0.1em; */
   background: #0e5c89;
   color: #ffffff;
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
   -webkit-appearance: none;
 }
 .button:hover,
 .button:focus {
-  background: #0d5077;
+  border: 1px solid #ffffff;
 }
 
 .button-block {
   display: block;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .forgot {
