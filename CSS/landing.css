@@ -1,40 +1,42 @@
-/* body {
-  background: url("../images/heroBuilding.png");
-  background-position: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
-} */
+@font-face 
+{
+  font-family: Avenir;
+  src: url("AvenirNextLTProDemi.otf");
 
-h5 {
-  margin-top: 12px;
-  font-size: 12px;
-  color: #ffffff;
+}
+
+body {
+  font-family: Avenir;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Avenir;
+
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #e8e8e8;
   align-items: center;
   justify-content: center;
   display: flex;
-}
-img {
-  margin-right: 81px;
-  width: 80px;
-  height: 80px;
+  padding-top: 29px;
+  padding-bottom: 29px;
 }
 
-#loginLink {
-  color: #ffffff;
-  height: 0px;
+.appimg{
+  height: 50px;
+  width: 50px;
+  padding-top: 64px;
 }
-#imgs {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-.container {
-  align-content: center;
-  display: block;
-}
+
 
 .subscribeh2 {
   color: #0e5c89;
@@ -46,25 +48,55 @@ img {
   padding-top: 88px;
 }
 
-.appsh2 {
-  color: #ffffff;
-  font-size: 28px;
-  padding-top: 80px;
-  margin-bottom: 64px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+.signup {
+  display: block;
+  text-align: center;
+  margin-bottom: 90px;
 }
 
-footer {
-  background-color: #e8e8e8;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  padding-top: 29px;
-  padding-bottom: 29px;
-  /* padding-right: 695px;
-  padding-left: 695px; */
+.text {
+  color: white;
+  padding-bottom: 230px;
+  padding-top: 32px;
+  text-align: center;
+  font-size: 40px;
+}
+
+#landingLogo {
+  padding-top: 230px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+#loginLink {
+  color: white;
+  position: absolute;
+  text-decoration: none;
+  padding-top: 32px;
+  margin-right: 50px;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+#loginLink:hover {
+  text-decoration: underline;
+}
+
+#skylineImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../images/heroBuilding.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#apps {
+  background-color: #2f2e2e;
 }
 
 #btn {
@@ -87,23 +119,72 @@ footer {
   padding-bottom: 24.5px;
 }
 
-#skyline {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url("../images/heroBuilding.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 230px;
-  padding-bottom: 230px;
-}
+/*  ---------------------------------------------------------------------------------
 
-#apps {
+
+
+/* Remove extra left and right margins, due to padding */
+
+.ourapps {
+  padding-top: 80px;
+  color: white;
+  text-align: center;
+}
+.row {
+  margin: 0 -5px;
   background-color: #2f2e2e;
 }
 
-.signup {
-  display: block;
-  text-align: center;
-  margin-bottom: 90px;
+.column {
+  float: left;
+  width: 15%;
+  padding: 0 10px;
 }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: #2f2e2e;
+  color: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-template-rows: 10vw 30vw 10vw; */
+  grid-gap: 160px;
+}
+
+/* Demo Specific Styles */
+.wrapper {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+main,
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/**************************** apps attempt 2 *************************************
