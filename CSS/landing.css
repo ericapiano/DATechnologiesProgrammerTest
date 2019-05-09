@@ -1,25 +1,38 @@
-@font-face 
-{
+@font-face {
   font-family: Avenir;
   src: url("AvenirNextLTProDemi.otf");
-
 }
 
 body {
   font-family: Avenir;
 }
 
+p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1b1e1f;
+}
 
 a {
   color: white;
   text-decoration: none;
   cursor: pointer;
   font-family: Avenir;
-
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+  color: #0e5c89;
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 200;
 }
 
 footer {
@@ -31,16 +44,24 @@ footer {
   padding-bottom: 29px;
 }
 
-.appimg{
-  height: 50px;
-  width: 50px;
+#container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#subscribe {
+  background-color: white;
+}
+
+.appimg {
+  height: 80px;
+  width: 80px;
   padding-top: 64px;
 }
 
-
 .subscribeh2 {
   color: #0e5c89;
-  font-size: 28px;
   margin-bottom: 45px;
   align-items: center;
   justify-content: center;
@@ -93,6 +114,7 @@ footer {
   background: url("../images/heroBuilding.png");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
 }
 
 #apps {
@@ -119,12 +141,6 @@ footer {
   padding-bottom: 24.5px;
 }
 
-/*  ---------------------------------------------------------------------------------
-
-
-
-/* Remove extra left and right margins, due to padding */
-
 .ourapps {
   padding-top: 80px;
   color: white;
@@ -141,14 +157,12 @@ footer {
   padding: 0 10px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -157,7 +171,6 @@ footer {
   }
 }
 
-/* Style the counter cards */
 .card {
   padding-bottom: 80px;
   text-align: center;
@@ -168,11 +181,9 @@ footer {
 .wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
-  /* grid-template-rows: 10vw 30vw 10vw; */
   grid-gap: 160px;
 }
 
-/* Demo Specific Styles */
 .wrapper {
   margin: 0 auto;
   max-width: 56em;
@@ -186,5 +197,30 @@ aside {
   justify-content: center;
 }
 
+.some-page-wrapper {
+  margin: 15px;
+  /* background-color: red; */
+}
 
-/**************************** apps attempt 2 *************************************
+.rowsof2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+/* .blue-column {
+  height: 100px;
+} */
+
+/* .green-column {
+  height: 100px;
+  background-color: green;
+} */
